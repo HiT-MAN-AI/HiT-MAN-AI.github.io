@@ -1,0 +1,5 @@
+{
+    "framework": "Newcastle Ottawa Scale",
+    "table": "| Study           | Selection (Newcastle Ottawa Scale) |   Comparability (Newcastle Ottawa Scale) |   Outcome/Exposure (Newcastle Ottawa Scale) |\n|:----------------|:-----------------------------------|-----------------------------------------:|--------------------------------------------:|\n| Blum 2010       | 4 | 2 | 3 |\n| Hofmeyr 2004    | 3 | 0 | 2 |\n| Lokugamage 2001 | 2 | 1 | 2 |\n| Widmer 2010     | 4 | 2 | 3 |\n| Winikoff 2010   | 4 | 2 | 3 |\n| Zuberi 2008     | 3 | 2 | 3 |\n| Walraven 2004   | 3 | 2 | 2 |",
+    "details": "| Title                                     | Options       |\n|:------------------------------------------|:--------------|\n| Selection (Newcastle Ottawa Scale)        | 0, 1, 2, 3, 4 |\n| Comparability (Newcastle Ottawa Scale)    | 0, 1, 2       |\n| Outcome/Exposure (Newcastle Ottawa Scale) | 0, 1, 2, 3    |"
+}

@@ -1,0 +1,112 @@
+{
+    "pmid": "33574573",
+    "title": "Smartphone apps for depression and anxiety: a systematic review and meta-analysis of techniques to increase engagement.",
+    "abstract": "Meta-analyses have shown that digital mental health apps can be efficacious in reducing symptoms of depression and anxiety. However, real-world usage of apps is typically not sustained over time, and no studies systematically examine which features increase sustained engagement with apps or the relationship between engagement features and clinical efficacy. We conducted a systematic search of the literature to identify empirical studies that (1) investigate standalone apps for depression and/or anxiety in symptomatic participants and (2) report at least one measure of engagement. Features intended to increase engagement were categorized using the persuasive system design (PSD) framework and principles of behavioral economics. Twenty-five studies with 4159 participants were included in the analysis. PSD features were commonly used, whereas behavioral economics techniques were not. Smartphone apps were efficacious in treating symptoms of anxiety and depression in randomized controlled trials, with overall small-to-medium effects (g\u2009=\u20090.2888, SE\u2009=\u20090.0999, z(15)\u2009=\u20092.89, p\u2009=\u20090.0119, Q(df\u2009=\u200914) = 41.93, p\u2009<\u20090.0001, I\n",
+    "question": "What features of smartphone apps for depression and anxiety are associated with increased sustained engagement and improved clinical efficacy in reducing symptoms of depression and anxiety?",
+    "criteria": "Titles and abstracts were evaluated against the inclusion and exclusion criteria. Studies that were deemed potentially relevant were next evaluated by their full text. Reasons for exclusion were recorded. When more than one publication of a study was found, the study with the most information was used for data analysis.",
+    "publication_date": "2021/2/13",
+    "n_patients": 4159,
+    "n_base": 511,
+    "key_references": [
+        {
+            "index": 20,
+            "citation": "Anguera JA, Jordan JT, Castaneda D, Gazzaley A, Are\u00e1n PA. Conducting a fully mobile and randomised clinical trial for depression: access, engagement and expense. BMJ Innov. 2016;2:14\u201321. doi: 10.1136/bmjinnov-2015-000098."
+        },
+        {
+            "index": 21,
+            "citation": "Bakker D, Rickard N. Engagement with a cognitive behavioural therapy mobile phone app predicts changes in mental health and wellbeing: MoodMission. Aust. Psychol. 2019;54:245\u2013260. doi: 10.1111/ap.12383."
+        },
+        {
+            "index": 22,
+            "citation": "Ben-Zeev D, et al. mHealth for schizophrenia: patient engagement with a mobile phone intervention following hospital discharge. JMIR Ment. Health. 2016;3:e34. doi: 10.2196/mental.6348."
+        },
+        {
+            "index": 23,
+            "citation": "Bustillos, D. The effects of using pacifica on depressed patients. https://search.proquest.com/docview/2172401714?pq-origsite=primo (2018)."
+        },
+        {
+            "index": 24,
+            "citation": "Caplan S, Sosa Lovera A, Reyna Liberato P. A feasibility study of a mental health mobile app in the Dominican Republic: the untold story. Int. J. Ment. Health. 2018;47:311\u2013345. doi: 10.1080/00207411.2018.1553486."
+        },
+        {
+            "index": 25,
+            "citation": "Chen AT, Wu S, Tomasino KN, Lattie EG, Mohr DC. A multi-faceted approach to characterizing user behavior and experience in a digital mental health intervention. J. Biomed. Inform. 2019;94:103187. doi: 10.1016/j.jbi.2019.103187."
+        },
+        {
+            "index": 26,
+            "citation": "Dahne J, et al. Pilot randomized trial of a self-help behavioral activation mobile app for utilization in primary care. Behav. Ther. 2019;50:817\u2013827. doi: 10.1016/j.beth.2018.12.003."
+        },
+        {
+            "index": 27,
+            "citation": "Dahne J, et al. Pilot randomized controlled trial of a Spanish-language Behavioral Activation mobile app (\u00a1Apt\u00edvate!) for the treatment of depressive symptoms among united states Latinx adults with limited English proficiency. J. Affect. Disord. 2019;250:210\u2013217. doi: 10.1016/j.jad.2019.03.009."
+        },
+        {
+            "index": 28,
+            "citation": "Enock PM, Hofmann SG, McNally RJ. Attention bias modification training via smartphone to reduce social anxiety: a randomized, controlled multi-session experiment. Cogn. Ther. Res. 2014;38:200\u2013216. doi: 10.1007/s10608-014-9606-z."
+        },
+        {
+            "index": 29,
+            "citation": "Hur J-W, Kim B, Park D, Choi S-W. A scenario-based cognitive behavioral therapy mobile app to reduce dysfunctional beliefs in individuals with depression: a randomized controlled trial. Telemed. J. E Health. 2018;24:710\u2013716. doi: 10.1089/tmj.2017.0214."
+        },
+        {
+            "index": 30,
+            "citation": "Inkster B, Sarda S, Subramanian V. An empathy-driven, conversational artificial intelligence agent (Wysa) for digital mental well-being: real-world data evaluation mixed-methods study. JMIR Mhealth Uhealth. 2018;6:e12106. doi: 10.2196/12106."
+        },
+        {
+            "index": 31,
+            "citation": "L\u00fcdtke T, Pult LK, Schr\u00f6der J, Moritz S, B\u00fccker L. A randomized controlled trial on a smartphone self-help application (Be Good to Yourself) to reduce depressive symptoms. Psychiatry Res. 2018;269:753\u2013762. doi: 10.1016/j.psychres.2018.08.113."
+        },
+        {
+            "index": 32,
+            "citation": "Lukas, C. A., Eskofier, B. & Berking, M. A gamified smartphone-based intervention for depression: results from a randomized controlled pilot trial. Preprint 10.2196/preprints.16643 (2019)."
+        },
+        {
+            "index": 33,
+            "citation": "Ly KH, et al. Behavioural activation versus mindfulness-based guided self-help treatment administered through a smartphone application: a randomised controlled trial. BMJ Open. 2014;4:e003440. doi: 10.1136/bmjopen-2013-003440."
+        },
+        {
+            "index": 34,
+            "citation": "Mehrotra S, Sudhir P, Rao G, Thirthalli J, Srikanth TK. Development and pilot testing of an internet-based self-help intervention for depression for indian users. Behav. Sci. 2018;8:36. doi: 10.3390/bs8040036."
+        },
+        {
+            "index": 35,
+            "citation": "Moberg C, Niles A, Beermann D. Guided self-help works: randomized waitlist controlled trial of pacifica, a mobile app integrating cognitive behavioral therapy and mindfulness for stress, anxiety, and depression. J. Med. Internet Res. 2019;21:e12556. doi: 10.2196/12556."
+        },
+        {
+            "index": 36,
+            "citation": "Mohr DC, et al. Comparison of the effects of coaching and receipt of app recommendations on depression, anxiety, and engagement in the intellicare platform: factorial randomized controlled trial. J. Med. Internet Res. 2019;21:e13609. doi: 10.2196/13609."
+        },
+        {
+            "index": 37,
+            "citation": "Norton, V. P. The CALM project: teaching mindfulness meditation in primary care using computer-based application (ProQuest, 2017)."
+        },
+        {
+            "index": 38,
+            "citation": "Pratap A, et al. Using mobile apps to assess and treat depression in hispanic and latino populations: fully remote randomized clinical trial. J. Med. Internet Res. 2018;20:e10130. doi: 10.2196/10130."
+        },
+        {
+            "index": 39,
+            "citation": "Roepke AM, et al. Randomized controlled trial of superbetter, a smartphone-based/internet-based self-help tool to reduce depressive symptoms. Games Health J. 2015;4:235\u2013246. doi: 10.1089/g4h.2014.0046."
+        },
+        {
+            "index": 40,
+            "citation": "Stiles-Shields C, Montague E, Kwasny MJ, Mohr DC. Behavioral and cognitive intervention strategies delivered via coached apps for depression: pilot trial. Psychol. Serv. 2019;16:233\u2013238. doi: 10.1037/ser0000261."
+        },
+        {
+            "index": 41,
+            "citation": "Stolz T, et al. A mobile app for social anxiety disorder: a three-arm randomized controlled trial comparing mobile and PC-based guided self-help interventions. J. Consult. Clin. Psychol. 2018;86:493\u2013504. doi: 10.1037/ccp0000301."
+        },
+        {
+            "index": 42,
+            "citation": "Wahle F, Kowatsch T, Fleisch E, Rufer M, Weidt S. Mobile sensing and support for people with depression: a pilot trial in the wild. JMIR Mhealth Uhealth. 2016;4:e111. doi: 10.2196/mhealth.5960."
+        },
+        {
+            "index": 43,
+            "citation": "Watts S, et al. CBT for depression: a pilot RCT comparing mobile phone vs. computer. BMC Psychiatry. 2013;13:49. doi: 10.1186/1471-244X-13-49."
+        },
+        {
+            "index": 44,
+            "citation": "Lim MH, et al. A pilot digital intervention targeting loneliness in youth mental health. Front. Psychiatry. 2019;10:604. doi: 10.3389/fpsyt.2019.00604."
+        }
+    ]
+}

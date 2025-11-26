@@ -1,0 +1,194 @@
+.file-drop-area {
+    border: 2px dashed #cbd5e1;
+    transition: all 0.3s ease;
+}
+
+.file-drop-area.dragover {
+    border-color: #3b82f6;
+    background-color: #eff6ff;
+}
+
+.file-drop-area.all-files-dropped {
+    border-color: #10b981;
+    background-color: #ecfdf5;
+}
+
+.loading-bar {
+    height: 4px;
+    background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+    width: 0%;
+    transition: width 0.3s ease;
+}
+
+.chat-message {
+    animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.markdown-content {
+    line-height: 1.6;
+}
+
+.markdown-content h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 1rem 0;
+    color: #1e293b;
+}
+
+.markdown-content h2 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin: 0.75rem 0;
+    color: #334155;
+}
+
+.markdown-content table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0;
+}
+
+.markdown-content th,
+.markdown-content td {
+    border: 1px solid #cbd5e1;
+    padding: 0.5rem;
+    text-align: left;
+}
+
+.markdown-content th {
+    background-color: #f1f5f9;
+    font-weight: bold;
+}
+
+.markdown-content img {
+    max-width: 100%;
+    height: auto;
+    margin: 1rem 0;
+}
+
+/* Ensure markdown messages handle wide tables and long words without overflowing the message box */
+.chat-message > div {
+    box-sizing: border-box;
+    overflow: auto;
+}
+
+.markdown-content {
+    overflow-x: auto;
+}
+
+.markdown-content table {
+    display: block;
+    width: 100%;
+    overflow: auto;
+}
+
+.markdown-content th,
+.markdown-content td {
+    word-break: break-word;
+    white-space: normal;
+}
+
+.draggable-folder {
+    cursor: pointer;
+    user-select: none;
+}
+
+.draggable-file {
+    cursor: grab; /* 拖拽前的游標樣式 */
+    user-select: none;
+    margin-left: 1rem;
+}
+
+.draggable-file:active {
+    cursor: grabbing; /* 拖拽時的游標樣式 */
+}
+
+.draggable-folder.dragging,
+.draggable-file.dragging {
+    opacity: 0.5;
+}
+
+.folder-structure {
+    margin-left: 1rem;
+    display: none;
+}
+
+.folder-structure.active {
+    display: block;
+}
+
+.spin {
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.upload-btn {
+    background-color: #94a3b8;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    cursor: not-allowed;
+}
+
+.upload-btn.active {
+    background-color: #10b981;
+    cursor: pointer;
+}
+
+.upload-btn.active:hover {
+    background-color: #059669;
+}
+
+.file-item {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+    background-color: #f8fafc;
+    border-radius: 0.375rem;
+    margin-bottom: 0.25rem;
+}
+
+.clear-btn {
+    background-color: #ef4444;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 0.375rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.clear-btn:hover {
+    background-color: #dc2626;
+}
+
+/* 確保左側區域延伸到底部 */
+.left-panel {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* 佔滿整個視窗高度 */
+}
+
+.folders-container {
+    flex: 1;
+    overflow-y: auto; /* 內容過多時可滾動 */
+}
+
+.required-files-info {
+    background-color: #fef3c7;
+    border: 1px solid #f59e0b;
+    border-radius: 0.375rem;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+}

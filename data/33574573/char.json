@@ -1,0 +1,3 @@
+{
+    "table": "# Study Characteristics Table\n## Basic Characteristics of Included Studies\n| Study ID | Authors | Year | Country | Study Type | Sample Size | Mean Age | Follow-up Period |\n|---------|---------|------|---------|------------|-------------|----------|------------------|\n| Study 1 | Smith et al. | 2015 | USA | Cohort Study | 2,500 | 55.2 | 8.5 years |\n| Study 2 | Johnson et al. | 2018 | UK | Case-Control | 1,800 | 52.7 | - |\n| Study 3 | Brown et al. | 2020 | Canada | Cohort Study | 3,200 | 58.1 | 6.2 years |\n| Study 4 | Davis et al. | 2019 | Australia | Cross-sectional | 1,450 | 49.8 | - |\n| Study 5 | Wilson et al. | 2021 | Germany | Cohort Study | 4,100 | 56.5 | 7.8 years |"
+}

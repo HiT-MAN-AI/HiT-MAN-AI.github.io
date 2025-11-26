@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HiT-MAN Demo</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Marked.js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <!-- Link to external CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-50 min-h-screen">
+    <div class="flex h-screen">
+        <!-- Left Content Folders Area -->
+        <div class="w-1/4 bg-white border-r border-gray-200 left-panel">
+            <div class="p-4 border-b border-gray-200">
+                <h2 class="text-lg font-semibold text-gray-800">Sample</h2>
+                <p class="text-xs text-gray-500 mt-1">Drag individual JSON files to upload area</p>
+            </div>
+            <div class="folders-container p-4">
+                <div class="space-y-2" id="content-folders">
+                    <!-- Folders will be populated dynamically from data/datasets.json -->
+                </div>
+            </div>
+        </div>
+        <!-- Middle Main Area -->
+        <div class="flex-1 flex flex-col">
+            <!-- Chat Box Area -->
+            <div class="flex-1 flex flex-col">
+                <!-- Chat History -->
+                <div id="chat-history" class="flex-1 overflow-y-auto p-6 space-y-4">
+                    <!-- Messages will be added dynamically -->
+                </div>
+                <!-- File Upload Area -->
+                <div class="p-6 border-t border-gray-200 bg-white">
+                    <div class="flex justify-between items-center mb-4">
+                        <h3 class="text-lg font-medium text-gray-800">File Upload</h3>
+                        <button id="clear-btn" class="clear-btn">
+                            <i class="fas fa-trash mr-1"></i> Clear All
+                        </button>
+                    </div>
+                    <div class="required-files-info">
+                        <div class="flex items-start">
+                            <i class="fas fa-info-circle text-yellow-500 mt-0.5 mr-2"></i>
+                            <div>
+                                <p class="text-sm font-medium text-yellow-800">Required Files</p>
+                                <p class="text-xs text-yellow-700">Drag 4 JSON files: char.json, data.json, fr.json, qa.json</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="file-drop-area" class="file-drop-area rounded-lg p-8 text-center cursor-pointer">
+                        <div class="mb-4">
+                            <i class="fas fa-cloud-upload-alt text-4xl text-gray-400"></i>
+                        </div>
+                        <p class="text-gray-600 mb-2">Drag individual JSON files here</p>
+                        <p class="text-sm text-gray-500">4 files required: char.json, data.json, fr.json, qa.json</p>
+                        <input type="file" id="file-input" multiple class="hidden">
+                    </div>
+                    <!-- Dropped Files List -->
+                    <div id="dropped-files-container" class="hidden mt-4">
+                        <h3 class="text-sm font-medium text-gray-700 mb-2">Dropped Files:</h3>
+                        <div id="dropped-files-list" class="bg-gray-50 rounded-lg p-3 max-h-32 overflow-y-auto">
+                            <!-- Dropped files will be listed here -->
+                        </div>
+                    </div>
+                    <!-- Upload Button -->
+                    <div class="mt-4 flex justify-center">
+                        <button id="upload-btn" class="upload-btn">
+                            Upload Files
+                        </button>
+                    </div>
+                    <!-- Loading Bar -->
+                    <div id="loading-container" class="hidden mt-4">
+                        <div class="flex items-center justify-center mb-2">
+                            <i class="fas fa-spinner spin text-blue-500 text-xl mr-2"></i>
+                            <span class="text-sm text-gray-600" id="loading-text">Preparing upload...</span>
+                        </div>
+                        <div class="loading-bar rounded-full" id="loading-bar"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Link to external JavaScript -->
+    <script>
+    // Populate the left folder pane from data/datasets.json
+    (function() {
+        async function populate() {
+            try {
+                const res = await fetch('data/datasets.json');
+                if (!res.ok) return;
+                const datasets = await res.json();
+                const container = document.getElementById('content-folders');
+                datasets.forEach(id => {
+                    const folderDiv = document.createElement('div');
+                    folderDiv.className = 'draggable-folder bg-white p-3 rounded-lg border border-gray-200';
+                    folderDiv.dataset.folder = id;
+                    folderDiv.innerHTML = `
+                        <div class="flex items-center folder-header">
+                            <i class="fas fa-folder text-gray-500 mr-2"></i>
+                            <span class="text-sm font-medium text-gray-700">${id}</span>
+                            <i class="fas fa-chevron-down text-xs ml-auto folder-toggle"></i>
+                        </div>
+                        <div class="folder-structure mt-2">
+                            <div class="draggable-file bg-white p-2 rounded border border-gray-200 mb-1" draggable="true" data-filename="char.json" data-folder="${id}">
+                                <div class="flex items-center">
+                                    <i class="fas fa-file-code text-yellow-500 mr-2"></i>
+                                    <span class="text-xs text-gray-600">char.json</span>
+                                </div>
+                            </div>
+                            <div class="draggable-file bg-white p-2 rounded border border-gray-200 mb-1" draggable="true" data-filename="data.json" data-folder="${id}">
+                                <div class="flex items-center">
+                                    <i class="fas fa-file-code text-yellow-500 mr-2"></i>
+                                    <span class="text-xs text-gray-600">data.json</span>
+                                </div>
+                            </div>
+                            <div class="draggable-file bg-white p-2 rounded border border-gray-200 mb-1" draggable="true" data-filename="fr.json" data-folder="${id}">
+                                <div class="flex items-center">
+                                    <i class="fas fa-file-code text-yellow-500 mr-2"></i>
+                                    <span class="text-xs text-gray-600">fr.json</span>
+                                </div>
+                            </div>
+                            <div class="draggable-file bg-white p-2 rounded border border-gray-200 mb-1" draggable="true" data-filename="qa.json" data-folder="${id}">
+                                <div class="flex items-center">
+                                    <i class="fas fa-file-code text-yellow-500 mr-2"></i>
+                                    <span class="text-xs text-gray-600">qa.json</span>
+                                </div>
+                            </div>
+                        </div>
+                    `;
+                    container.appendChild(folderDiv);
+                });
+            } catch (e) {
+                console.warn('Could not load datasets.json', e);
+            }
+        }
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', populate);
+        } else {
+            populate();
+        }
+    })();
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

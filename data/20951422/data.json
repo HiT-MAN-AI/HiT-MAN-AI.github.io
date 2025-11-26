@@ -1,0 +1,52 @@
+{
+    "pmid": "20951422",
+    "title": "Chest-compression-only versus standard cardiopulmonary resuscitation: a meta-analysis.",
+    "abstract": "## BACKGROUND\nIn out-of-hospital cardiac arrest, dispatcher-assisted chest-compression-only bystander CPR might be superior to standard bystander CPR (chest compression plus rescue ventilation), but trial findings have not shown significantly improved outcomes. We aimed to establish the association of chest-compression-only CPR with survival in patients with out-of-hospital cardiac arrest.\n## METHODS\nMedline and Embase were systematically reviewed for studies published between January, 1985, and August, 2010, in which chest-compression-only bystander CPR was compared with standard bystander CPR for adult patients with out-of-hospital cardiac arrest. In the primary meta-analysis, we included trials in which patients were randomly allocated to receive one of the two CPR techniques, according to dispatcher instructions; and in the secondary meta-analysis, we included observational cohort studies of chest-compression-only CPR. All studies had to supply survival data. The primary outcome was survival to hospital discharge. A fixed-effects model was used for both meta-analyses because of an absence of heterogeneity among the studies (I(2)=0%).\n## FINDINGS\nIn the primary meta-analysis, pooled data from three randomised trials showed that chest-compression-only CPR was associated with improved chance of survival compared with standard CPR (14% [211/1500] vs 12% [178/1531]; risk ratio 1\u00b722, 95% CI 1\u00b701-1\u00b746). The absolute increase in survival was 2\u00b74% (95% CI 0\u00b71-4\u00b79), and the number needed to treat was 41 (95% CI 20-1250). In the secondary meta-analysis of seven observational cohort studies, no difference was recorded between the two CPR techniques (8% [223/2731] vs 8% [863/11 152]; risk ratio 0\u00b796, 95% CI 0\u00b783-1\u00b711).\n## INTERPRETATION\nFor adults with out-of-hospital cardiac arrest, instructions to bystanders from emergency medical services dispatch should focus on chest-compression-only CPR.\n## FUNDING\nUS National Institutes of Health and American Heart Association.\n",
+    "question": "Is chest-compression-only bystander CPR associated with improved survival outcomes compared to standard bystander CPR (chest compressions plus rescue breathing) in adults with out-of-hospital cardiac arrest?",
+    "criteria": "We separated the systematic review and meta-analysis into two parts: in the primary analysis, randomized clinical trials were included and in the secondary, observational cohort studies. Only three randomized clinical trials have been conducted where adult patients suffering from out-of-hospital cardiac arrest received randomized instructions by a dispatcher for either chest compression-only CPR or standard CPR, and all three trials were included in the systematic review and meta-analysis. For observational studies, the following eligibility criteria were required for inclusion: (1) observational cohort studies (no case series); (2) comparison between chest-compression-only CPR and standard CPR; (3) survival data available; (3) adult population; (4) unstratified cohort (e.g., arrests of non-cardiac origin only); (5) bystander CPR; (6) out-of-hospital arrest. Articles were considered if published in English and German; this notwithstanding, no other foreign language study was found.",
+    "publication_date": "2010/10/19",
+    "n_patients": 4231,
+    "n_base": 1000,
+    "key_references": [
+        {
+            "index": 14,
+            "citation": "Hallstrom A, Cobb L, Johnson E, Copass M. Cardiopulmonary Resuscitation by Chest Compression Alone or with Mouth-to-Mouth Ventilation. New England Journal of Medicine. 2000;342(21):1546\u201353."
+        },
+        {
+            "index": 15,
+            "citation": "Rea TD, Fahrenbruch C, Culley L, Donohoe RT, Hambly C, Innes J, et al. CPR with Chest Compression Alone or with Rescue Breathing. New England Journal of Medicine. 2010;363(5):423\u201333."
+        },
+        {
+            "index": 16,
+            "citation": "Svensson L, Bohm K, Castr\u00e8n M, Pettersson H, Engerstr\u00f6m L, Herlitz J, et al. Compression-Only CPR or Standard CPR in Out-of-Hospital Cardiac Arrest. New England Journal of Medicine. 2010;363(5):434\u201342."
+        },
+        {
+            "index": 12,
+            "citation": "Van Hoeyweghen RJ, Bossaert LL, Mullie A, Calle P, Martens P, Buylaert WA, et al. Quality and efficiency of bystander CPR. Resuscitation. 1993 Aug;26(1):47\u201352."
+        },
+        {
+            "index": 13,
+            "citation": "Waalewijn RA, Tijssen JG, Koster RW. Bystander initiated actions in out-of-hospital cardiopulmonary resuscitation: results from the Amsterdam Resuscitation Study (ARRESUST) Resuscitation. 2001 Sep;50(3):273\u20139."
+        },
+        {
+            "index": 11,
+            "citation": "SOS-KANTO Study Group. Cardiopulmonary resuscitation by bystanders with chest compression only (SOS-KANTO): an observational study. The Lancet. 2007;369(9565):920\u20136."
+        },
+        {
+            "index": 7,
+            "citation": "Bohm K, Rosenqvist M, Herlitz J, Hollenberg J, Svensson L. Survival Is Similar After Standard Treatment and Chest Compression Only in Out-of-Hospital Bystander Cardiopulmonary Resuscitation. Circulation. 2007 December 18;116(25):2908\u201312."
+        },
+        {
+            "index": 8,
+            "citation": "Iwami T, Kawamura T, Hiraide A, Berg RA, Hayashi Y, Nishiuchi T, et al. Effectiveness of Bystander-Initiated Cardiac-Only Resuscitation for Patients With Out-of-Hospital Cardiac Arrest. Circulation. 2007 December 18;116(25):2900\u20137."
+        },
+        {
+            "index": 9,
+            "citation": "Olasveengen TM, Wik L, Steen PA. Standard basic life support vs. continuous chest compressions only in out-of-hospital cardiac arrest. Acta Anaesthesiologica Scandinavica. 2008;52(7):914\u20139."
+        },
+        {
+            "index": 10,
+            "citation": "Ong MEH, Ng FSP, Anushia P, Tham LP, Leong BSH, Ong VYK, et al. Comparison of chest compression only and standard cardiopulmonary resuscitation for out-of-hospital cardiac arrest in Singapore. Resuscitation. 2008;78(2):119\u201326."
+        }
+    ]
+}
