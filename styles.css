@@ -99,13 +99,13 @@
 }
 
 .draggable-file {
-    cursor: grab; /* 拖拽前的游標樣式 */
+    cursor: grab;
     user-select: none;
     margin-left: 1rem;
 }
 
 .draggable-file:active {
-    cursor: grabbing; /* 拖拽時的游標樣式 */
+    cursor: grabbing;
 }
 
 .draggable-folder.dragging,
@@ -173,16 +173,38 @@
     background-color: #dc2626;
 }
 
-/* 確保左側區域延伸到底部 */
 .left-panel {
     display: flex;
     flex-direction: column;
-    height: 100vh; /* 佔滿整個視窗高度 */
+    height: auto; /* default: let content determine height on small screens */
+}
+
+/* On medium and larger screens keep left panel full viewport height */
+@media (min-width: 768px) {
+    .left-panel {
+        height: 100vh; /* occupy full viewport height on wider screens */
+    }
 }
 
 .folders-container {
     flex: 1;
-    overflow-y: auto; /* 內容過多時可滾動 */
+    overflow-y: auto;
+}
+
+/* Responsive adjustments for small screens */
+@media (max-width: 767px) {
+    .folder-structure {
+        margin-left: 0;
+    }
+    .draggable-file {
+        margin-left: 0;
+    }
+    .file-drop-area {
+        padding: 1.25rem; /* reduce padding for mobile */
+    }
+    .dropped-files-list {
+        max-height: 28vh;
+    }
 }
 
 .required-files-info {
